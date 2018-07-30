@@ -13,6 +13,7 @@
 //= require bootstrap
 //= require_self
 //= require cable
+//= require cloudinary
 
 function remove_all_streams() {
   if (App.messages) App.cable.subscriptions.remove(App.messages);

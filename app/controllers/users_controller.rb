@@ -14,7 +14,6 @@ class UsersController < ApplicationController
 
   def show
     @blogs = @user.blogs.ordered_by_created_at.page(params[:page]).per Settings.pagination.report
-
   end
 
   def show_public
